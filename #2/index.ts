@@ -27,7 +27,7 @@ export function outages(startDateTime: Date, endDateTime: Date): { type: 'PARTIA
   let delayDays: number = = Math.floor((endDay - startDay) / Day_Conversion);
   let timestamp: Date = endDateTime - startDateTime;
   
-  if (delayDays <== partialDayCutoff){
+  if (delayDays <= partialDayCutoff){
     delayStatus = 'PARTIAL';
   }
   else{
